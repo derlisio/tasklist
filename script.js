@@ -67,7 +67,7 @@ function addDeleteBtn() {//FUNCIONALIDAD DEL ELEMENTO BORRAR
   deleteBtn.textContent = "X";
   deleteBtn.className = "btn-delete";
 
-  deleteBtn.addEventListener("click", () => {
+  deleteBtn.addEventListener("click", (e) => {
     const item = e.target.parentElement;
     ul.removeChild(item);//ELIMINA LA TAREA
 
